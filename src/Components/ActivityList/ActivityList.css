@@ -1,0 +1,20 @@
+.ActivityList {
+  width: 85%;
+  margin: 2.5em auto;
+}
+.ActivityListTypos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5em;
+}
+.ActivityListTitle {
+   font-size: 14px;
+   font-weight: 500;
+   color: #457B9D; 
+}
+.ActivityListCount {
+    font-size: 12px;
+    font-weight: 400;
+    color: #457B9D; 
+}

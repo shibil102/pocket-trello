@@ -1,0 +1,10 @@
+.NewActivity {
+width: 85%;
+margin: 2.5em auto;
+}
+.NewActivity .quote {
+   padding-bottom: 0.5em;
+   font-size: 14px;
+   font-weight: 500;
+   color: #457B9D;    
+}

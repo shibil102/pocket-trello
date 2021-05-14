@@ -1,0 +1,60 @@
+.EmptyListAnimation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+.EmptyText {
+   margin-top: 3em;
+   text-align: center;
+   color: #ADB5BD;
+}
+.clock {
+    position:relative;
+    transform:scale(2);
+    border-radius:50%;
+    border:2px solid #ADB5BD; 
+    width:50px;
+    height:50px;
+  }
+  
+  .clock:after {
+    position:absolute;
+    width:0px;
+    height:20px;
+    display:block;
+    border-left:2px solid #457B9D;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    content:'';
+    left:22px;
+    top:5px;
+    animation-duration: 5s;
+  }
+  
+  .clock:before {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position:absolute;
+    width:0px;
+    height:15px;
+    display:block;
+    border-left:2px solid #457B9D;
+    content:'';
+    left:22px;
+    top:10px;
+    animation-duration: 60s;
+  }
+  
+  .clock:before,.clock:after {
+    transform-origin: bottom;
+    animation-name: dial;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes dial {
+      0%   {transform: rotate(0deg);}
+      100% {transform: rotate(360deg);}
+  }
